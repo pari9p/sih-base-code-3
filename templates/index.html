@@ -1,0 +1,201 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <i class="fas fa-lightbulb"></i>
+                Find Your Perfect Internship
+            </h1>
+            <p class="hero-subtitle">
+                Get personalized internship recommendations based on your skills, education, and interests
+            </p>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-header">
+                <h2>
+                    <i class="fas fa-user"></i>
+                    Tell Us About Yourself
+                </h2>
+                <p>Fill in your details to get the best internship matches</p>
+            </div>
+
+            <form id="recommendationForm" class="recommendation-form">
+                <!-- Education -->
+                <div class="form-group">
+                    <label for="education">
+                        <i class="fas fa-graduation-cap"></i>
+                        Education Background
+                    </label>
+                    <select id="education" name="education" required>
+                        <option value="">Select your education level</option>
+                        <option value="10th">10th Standard</option>
+                        <option value="12th">12th Standard</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="BA">Bachelor of Arts (BA)</option>
+                        <option value="BSc">Bachelor of Science (BSc)</option>
+                        <option value="BCom">Bachelor of Commerce (BCom)</option>
+                        <option value="BBA">Bachelor of Business Administration (BBA)</option>
+                        <option value="BTech">Bachelor of Technology (BTech)</option>
+                        <option value="BCA">Bachelor of Computer Applications (BCA)</option>
+                        <option value="BFA">Bachelor of Fine Arts (BFA)</option>
+                        <option value="BDes">Bachelor of Design (BDes)</option>
+                        <option value="BEd">Bachelor of Education (BEd)</option>
+                        <option value="BJournalism">Bachelor of Journalism</option>
+                        <option value="MA">Master of Arts (MA)</option>
+                        <option value="MSc">Master of Science (MSc)</option>
+                        <option value="MCom">Master of Commerce (MCom)</option>
+                        <option value="MBA">Master of Business Administration (MBA)</option>
+                        <option value="MCA">Master of Computer Applications (MCA)</option>
+                        <option value="MTech">Master of Technology (MTech)</option>
+                        <option value="CA">Chartered Accountant (CA)</option>
+                        <option value="PhD">Doctor of Philosophy (PhD)</option>
+                    </select>
+                </div>
+
+                <!-- Skills -->
+                <div class="form-group">
+                    <label for="skills">
+                        <i class="fas fa-tools"></i>
+                        Your Skills & Interests
+                    </label>
+                    <div class="skills-container">
+                        <input type="text" id="skillInput" placeholder="Type and press Enter to add skills">
+                        <div id="skillTags" class="skill-tags"></div>
+                        <input type="hidden" id="skills" name="skills">
+                    </div>
+                    <div class="skill-suggestions">
+                        <span class="suggestion-label">Popular skills:</span>
+                        <button type="button" class="skill-suggestion" data-skill="Communication">Communication</button>
+                        <button type="button" class="skill-suggestion" data-skill="Python">Python</button>
+                        <button type="button" class="skill-suggestion" data-skill="Excel">Excel</button>
+                        <button type="button" class="skill-suggestion" data-skill="Writing">Writing</button>
+                        <button type="button" class="skill-suggestion" data-skill="Design">Design</button>
+                        <button type="button" class="skill-suggestion" data-skill="Marketing">Marketing</button>
+                    </div>
+                </div>
+
+                <!-- Sector -->
+                <div class="form-group">
+                    <label for="sector">
+                        <i class="fas fa-industry"></i>
+                        Preferred Sector
+                    </label>
+                    <select id="sector" name="sector" required>
+                        <option value="">Select preferred sector</option>
+                        <option value="Information Technology">Information Technology</option>
+                        <option value="Marketing">Marketing</option>
+                        <option value="Finance">Finance</option>
+                        <option value="Design">Design</option>
+                        <option value="Media">Media</option>
+                        <option value="Human Resources">Human Resources</option>
+                        <option value="Sales">Sales</option>
+                        <option value="Research">Research</option>
+                        <option value="Education">Education</option>
+                        <option value="Analytics">Analytics</option>
+                        <option value="Healthcare">Healthcare</option>
+                        <option value="Manufacturing">Manufacturing</option>
+                        <option value="Government">Government</option>
+                    </select>
+                </div>
+
+                <!-- Location -->
+                <div class="form-group">
+                    <label for="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        Preferred Location
+                    </label>
+                    <select id="location" name="location" required>
+                        <option value="">Select preferred location</option>
+                        <option value="Remote">Work from Home</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Ahmedabad">Ahmedabad</option>
+                        <option value="Jaipur">Jaipur</option>
+                        <option value="Surat">Surat</option>
+                        <option value="Lucknow">Lucknow</option>
+                        <option value="Kanpur">Kanpur</option>
+                        <option value="Nagpur">Nagpur</option>
+                        <option value="Indore">Indore</option>
+                        <option value="Bhopal">Bhopal</option>
+                        <option value="Visakhapatnam">Visakhapatnam</option>
+                        <option value="Patna">Patna</option>
+                        <option value="Vadodara">Vadodara</option>
+                        <option value="Ghaziabad">Ghaziabad</option>
+                        <option value="Ludhiana">Ludhiana</option>
+                        <option value="Coimbatore">Coimbatore</option>
+                        <option value="Agra">Agra</option>
+                        <option value="Madurai">Madurai</option>
+                        <option value="Nashik">Nashik</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group">
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <i class="fas fa-search"></i>
+                        Get My Recommendations
+                        <div class="spinner" id="spinner"></div>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="resultsSection" class="results-section hidden">
+        <div class="results-header">
+            <h2>
+                <i class="fas fa-star"></i>
+                Your Personalized Recommendations
+            </h2>
+            <p id="resultsSubtitle"></p>
+        </div>
+        <div id="recommendationCards" class="recommendation-cards">
+            <!-- Results will be populated here -->
+        </div>
+        <div class="results-actions">
+            <button type="button" class="secondary-btn" onclick="window.location.reload()">
+                <i class="fas fa-redo"></i>
+                Get New Recommendations
+            </button>
+        </div>
+    </section>
+</div>
+
+<!-- Loading Overlay -->
+<div id="loadingOverlay" class="loading-overlay hidden">
+    <div class="loading-content">
+        <div class="loading-spinner"></div>
+        <p>Finding your perfect internships...</p>
+    </div>
+</div>
+
+<!-- Error Modal -->
+<div id="errorModal" class="modal hidden">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3><i class="fas fa-exclamation-triangle"></i> Error</h3>
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p id="errorMessage"></p>
+        </div>
+        <div class="modal-footer">
+            <button class="primary-btn" onclick="closeModal()">OK</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

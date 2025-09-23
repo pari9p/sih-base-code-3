@@ -1,0 +1,247 @@
+{
+  "app-001": {
+    "id": "app-001",
+    "user_id": "4e48462f-b5ab-4774-9e3a-084864c1fa42",
+    "internship_id": 1,
+    "internship_title": "AI/ML Engineer Intern - Premium",
+    "company": "Google India",
+    "status": "interviewed",
+    "applied_date": "2025-09-15T10:30:00.000000",
+    "last_updated": "2025-09-20T14:45:00.000000",
+    "cover_letter": "Passionate about AI/ML with hands-on experience in deep learning projects. Excited to contribute to Google's innovative AI initiatives.",
+    "timeline": [
+      {
+        "status": "applied",
+        "date": "2025-09-15T10:30:00.000000",
+        "description": "Application submitted successfully"
+      },
+      {
+        "status": "screening",
+        "date": "2025-09-16T09:15:00.000000", 
+        "description": "Application under review by HR team"
+      },
+      {
+        "status": "shortlisted",
+        "date": "2025-09-18T16:20:00.000000",
+        "description": "Shortlisted for technical interview round"
+      },
+      {
+        "status": "interviewed",
+        "date": "2025-09-20T14:45:00.000000",
+        "description": "Completed technical interview with senior ML engineer"
+      }
+    ],
+    "interview_details": {
+      "scheduled_date": "2025-09-20T14:45:00.000000",
+      "interviewer": "Dr. Amit Sharma, Senior ML Engineer",
+      "type": "Technical Interview",
+      "feedback": "Strong technical knowledge, good problem-solving skills. Awaiting final decision."
+    }
+  },
+  "app-002": {
+    "id": "app-002", 
+    "user_id": "0ec1e657-a010-4b08-b33f-c8a0f673ddbc",
+    "internship_id": 10,
+    "internship_title": "Finance Analyst Intern",
+    "company": "HDFC Bank",
+    "status": "accepted",
+    "applied_date": "2025-09-10T11:20:00.000000",
+    "last_updated": "2025-09-22T10:00:00.000000",
+    "cover_letter": "MBA Finance student with strong analytical skills. Eager to apply financial modeling expertise in real-world banking scenarios.",
+    "timeline": [
+      {
+        "status": "applied",
+        "date": "2025-09-10T11:20:00.000000",
+        "description": "Application submitted for finance analyst position"
+      },
+      {
+        "status": "screening", 
+        "date": "2025-09-12T14:30:00.000000",
+        "description": "Initial screening completed by finance team"
+      },
+      {
+        "status": "shortlisted",
+        "date": "2025-09-15T09:45:00.000000", 
+        "description": "Selected for case study round"
+      },
+      {
+        "status": "interviewed",
+        "date": "2025-09-18T15:30:00.000000",
+        "description": "Successfully completed case study presentation"
+      },
+      {
+        "status": "accepted",
+        "date": "2025-09-22T10:00:00.000000",
+        "description": "Congratulations! Internship offer accepted. Start date: October 1, 2025"
+      }
+    ],
+    "offer_details": {
+      "stipend": "₹22,000/month",
+      "start_date": "2025-10-01",
+      "duration": "6 months", 
+      "reporting_manager": "Ravi Kumar, VP Finance",
+      "location": "Gurgaon Office"
+    }
+  },
+  "app-003": {
+    "id": "app-003",
+    "user_id": "demo-user-1", 
+    "internship_id": 4,
+    "internship_title": "Software Development Intern",
+    "company": "TCS Innovation Labs",
+    "status": "shortlisted",
+    "applied_date": "2025-09-12T09:00:00.000000",
+    "last_updated": "2025-09-19T11:30:00.000000",
+    "cover_letter": "Experienced Java developer with Spring Boot expertise. Looking forward to contributing to enterprise solutions at TCS.",
+    "timeline": [
+      {
+        "status": "applied", 
+        "date": "2025-09-12T09:00:00.000000",
+        "description": "Application submitted for software development role"
+      },
+      {
+        "status": "screening",
+        "date": "2025-09-14T16:15:00.000000",
+        "description": "Resume screening passed, technical assessment scheduled"
+      },
+      {
+        "status": "shortlisted",
+        "date": "2025-09-19T11:30:00.000000",
+        "description": "Technical assessment cleared. Interview scheduled for September 25th"
+      }
+    ],
+    "next_steps": "Technical interview scheduled for September 25th at 2:00 PM"
+  },
+  "app-004": {
+    "id": "app-004",
+    "user_id": "demo-user-2",
+    "internship_id": 11,
+    "internship_title": "Mechanical Engineering Intern", 
+    "company": "Tata Motors",
+    "status": "rejected",
+    "applied_date": "2025-09-08T14:20:00.000000",
+    "last_updated": "2025-09-16T17:45:00.000000",
+    "cover_letter": "Mechanical engineering student with CAD expertise and passion for automotive industry. Excited about Tata Motors' innovation.",
+    "timeline": [
+      {
+        "status": "applied",
+        "date": "2025-09-08T14:20:00.000000",
+        "description": "Application submitted for mechanical engineering internship"
+      },
+      {
+        "status": "screening",
+        "date": "2025-09-10T10:00:00.000000", 
+        "description": "Application review in progress"
+      },
+      {
+        "status": "rejected",
+        "date": "2025-09-16T17:45:00.000000",
+        "description": "Thank you for your interest. Position filled with candidate having more relevant experience."
+      }
+    ],
+    "rejection_reason": "Position filled with candidate having more relevant industry experience"
+  },
+  "app-005": {
+    "id": "app-005",
+    "user_id": "demo-user-3",
+    "internship_id": 3,
+    "internship_title": "Data Science Intern",
+    "company": "Flipkart", 
+    "status": "applied",
+    "applied_date": "2025-09-21T13:15:00.000000",
+    "last_updated": "2025-09-21T13:15:00.000000",
+    "cover_letter": "Data science graduate student with published research and Kaggle expertise. Passionate about e-commerce analytics and recommendation systems.",
+    "timeline": [
+      {
+        "status": "applied",
+        "date": "2025-09-21T13:15:00.000000",
+        "description": "Application submitted for data science internship"
+      }
+    ]
+  },
+  "app-006": {
+    "id": "app-006",
+    "user_id": "demo-user-4", 
+    "internship_id": 6,
+    "internship_title": "Digital Marketing Intern",
+    "company": "Bajaj Finserv",
+    "status": "screening",
+    "applied_date": "2025-09-18T16:30:00.000000",
+    "last_updated": "2025-09-20T12:00:00.000000",
+    "cover_letter": "MBA Marketing student with 3 years of FMCG experience. Expertise in digital marketing and brand management.",
+    "timeline": [
+      {
+        "status": "applied",
+        "date": "2025-09-18T16:30:00.000000",
+        "description": "Application submitted successfully"
+      },
+      {
+        "status": "screening",
+        "date": "2025-09-20T12:00:00.000000",
+        "description": "Application under review by marketing team. Portfolio assessment in progress"
+      }
+    ]
+  },
+  "app-007": {
+    "id": "app-007",
+    "user_id": "demo-user-5",
+    "internship_id": 10,
+    "internship_title": "Finance Analyst Intern",
+    "company": "HDFC Bank",
+    "status": "withdrawn",
+    "applied_date": "2025-09-14T10:45:00.000000", 
+    "last_updated": "2025-09-19T14:20:00.000000",
+    "cover_letter": "Final year BCom student aspiring to work in banking sector. Strong foundation in accounting and financial analysis.",
+    "timeline": [
+      {
+        "status": "applied",
+        "date": "2025-09-14T10:45:00.000000",
+        "description": "Application submitted for finance analyst role"
+      },
+      {
+        "status": "withdrawn",
+        "date": "2025-09-19T14:20:00.000000",
+        "description": "Application withdrawn by candidate due to conflicting academic schedule"
+      }
+    ],
+    "withdrawal_reason": "Academic schedule conflict with internship timeline"
+  },
+  "app-008": {
+    "id": "app-008",
+    "user_id": "demo-user-6", 
+    "internship_id": 8,
+    "internship_title": "UI/UX Design Intern",
+    "company": "Zomato",
+    "status": "interviewed",
+    "applied_date": "2025-09-11T15:20:00.000000",
+    "last_updated": "2025-09-21T16:30:00.000000",
+    "cover_letter": "Product design student with portfolio of innovative projects. Passionate about creating delightful user experiences for millions of users.",
+    "timeline": [
+      {
+        "status": "applied",
+        "date": "2025-09-11T15:20:00.000000",
+        "description": "Application and portfolio submitted"
+      },
+      {
+        "status": "screening",
+        "date": "2025-09-13T11:00:00.000000",
+        "description": "Portfolio review completed, design challenge assigned"
+      },
+      {
+        "status": "shortlisted", 
+        "date": "2025-09-17T14:45:00.000000",
+        "description": "Design challenge submitted successfully"
+      },
+      {
+        "status": "interviewed",
+        "date": "2025-09-21T16:30:00.000000",
+        "description": "Design interview completed with senior design team"
+      }
+    ],
+    "interview_details": {
+      "type": "Design Portfolio Review",
+      "interviewer": "Sarah Patel, Lead Designer",
+      "feedback": "Impressive portfolio with strong user-centered approach. Creative solutions demonstrated."
+    }
+  }
+}

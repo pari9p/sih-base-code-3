@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - PM Internship Scheme</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/beautiful.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="auth-page">
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <a href="/" class="back-link">
+                    <i class="fas fa-arrow-left"></i> Back
+                </a>
+                <h2>
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign In
+                </h2>
+                <p>Welcome back! Sign in to your account.</p>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">
+                        <i class="fas fa-envelope"></i>
+                        Email Address
+                    </label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <i class="fas fa-lock"></i>
+                        Password
+                    </label>
+                    <div class="password-field">
+                        <input type="password" id="password" name="password" required placeholder="Enter your password">
+                        <button type="button" class="toggle-password" onclick="togglePassword()">
+                            <i class="fas fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    <i class="fas fa-sign-in-alt"></i>
+                    Sign In
+                </button>
+            </form>
+
+            <div class="auth-divider">
+                <span>OR</span>
+            </div>
+
+            <button class="btn btn-google" onclick="loginWithGoogle()">
+                <i class="fab fa-google"></i>
+                Continue with Google
+            </button>
+
+            <div class="auth-footer">
+                <p>Don't have an account? <a href="/signup">Sign Up</a></p>
+                <p><a href="#" onclick="forgotPassword()">Forgot Password?</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Signing you in...</p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = {
+                email: formData.get('email'),
+                password: formData.get('password')
+            };
+
+            showLoading();
+
+            try {
+                const response = await fetch('/api/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    window.location.href = result.redirect;
+                } else {
+                    hideLoading();
+                    showError(result.error || 'Login failed');
+                }
+            } catch (error) {
+                hideLoading();
+                showError('Network error. Please try again.');
+            }
+        });
+
+        function togglePassword() {
+            const passwordField = document.getElementById('password');
+            const toggleButton = document.querySelector('.toggle-password i');
+            
+            if (passwordField.type === 'password') {
+                passwordField.type = 'text';
+                toggleButton.className = 'fas fa-eye-slash';
+            } else {
+                passwordField.type = 'password';
+                toggleButton.className = 'fas fa-eye';
+            }
+        }
+
+        function loginWithGoogle() {
+            showError('Google Sign-In will be implemented in production version.');
+        }
+
+        function forgotPassword() {
+            showError('Password reset functionality will be implemented in production version.');
+        }
+
+        function showLoading() {
+            document.getElementById('loading').classList.remove('hidden');
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').classList.add('hidden');
+        }
+
+        function showError(message) {
+            // Create modern toast notification
+            const toast = document.createElement('div');
+            toast.className = 'toast error';
+            toast.innerHTML = `
+                <div class="toast-content">
+                    <i class="fas fa-exclamation-circle"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            // Add toast to body
+            document.body.appendChild(toast);
+            
+            // Show toast
+            setTimeout(() => toast.classList.add('show'), 100);
+            
+            // Hide toast after 4 seconds
+            setTimeout(() => {
+                toast.classList.remove('show');
+                setTimeout(() => document.body.removeChild(toast), 300);
+            }, 4000);
+        }
+    </script>
+</body>
+</html>

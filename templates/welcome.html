@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Internship Scheme - Welcome</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/beautiful.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Beautiful Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="/">
+                    <i class="fas fa-graduation-cap"></i>
+                    PM Internship Scheme
+                </a>
+            </div>
+            <div class="language-selector">
+                <select id="languageSelect" style="padding: 8px 12px; border-radius: 8px; border: 2px solid #e2e8f0; background: white;">
+                    <option value="en">English</option>
+                    <option value="hi">हिंदी</option>
+                    <option value="ta">தமிழ்</option>
+                    <option value="te">తెలుగు</option>
+                    <option value="bn">বাংলা</option>
+                    <option value="mr">मराठी</option>
+                    <option value="gu">ગુજરાતી</option>
+                    <option value="kn">ಕನ್ನಡ</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <div class="welcome-content">
+                <h1>
+                    <i class="fas fa-rocket" style="color: #f093fb; margin-right: 15px;"></i>
+                    Welcome to PM Internship Scheme
+                </h1>
+                <p>
+                    Discover your perfect internship match with our AI-powered recommendation engine. 
+                    Connect with top companies, build your career, and shape India's future.
+                </p>
+                <div class="welcome-buttons">
+                    <a href="/login" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Login to Continue
+                    </a>
+                    <a href="/signup" class="btn btn-secondary">
+                        <i class="fas fa-user-plus"></i>
+                        Create New Account
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <div class="container" style="padding: 4rem 1.5rem;">
+        <div style="text-align: center; margin-bottom: 3rem;">
+            <h2 style="font-size: 2.5rem; font-weight: 800; color: white; margin-bottom: 1rem;">
+                Why Choose PM Internship Scheme?
+            </h2>
+            <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 0 auto;">
+                Experience the future of internship matching with cutting-edge AI technology
+            </p>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="stats-card">
+                <div class="stats-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="stats-number">AI</div>
+                <div class="stats-label">Smart Matching Algorithm</div>
+                <p style="margin-top: 1rem; color: var(--gray-600);">
+                    Our advanced AI analyzes your profile to find perfect internship matches with 95% accuracy
+                </p>
+            </div>
+
+            <div class="stats-card">
+                <div class="stats-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <div class="stats-number">500+</div>
+                <div class="stats-label">Partner Companies</div>
+                <p style="margin-top: 1rem; color: var(--gray-600);">
+                    Connect with top companies across technology, healthcare, finance, and more sectors
+                </p>
+            </div>
+
+            <div class="stats-card">
+                <div class="stats-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stats-number">10k+</div>
+                <div class="stats-label">Success Stories</div>
+                <p style="margin-top: 1rem; color: var(--gray-600);">
+                    Join thousands of students who found their dream internships through our platform
+                </p>
+            </div>
+
+            <div class="stats-card">
+                <div class="stats-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="stats-number">24/7</div>
+                <div class="stats-label">Mobile Access</div>
+                <p style="margin-top: 1rem; color: var(--gray-600);">
+                    Apply anywhere, anytime with our mobile-optimized platform designed for India
+                </p>
+            </div>
+
+            <div class="stats-card">
+                <div class="stats-icon">
+                    <i class="fas fa-language"></i>
+                </div>
+                <div class="stats-number">8+</div>
+                <div class="stats-label">Indian Languages</div>
+                <p style="margin-top: 1rem; color: var(--gray-600);">
+                    Use the platform in your preferred language for better accessibility
+                </p>
+            </div>
+
+            <div class="stats-card">
+                <div class="stats-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="stats-number">100%</div>
+                <div class="stats-label">Verified Opportunities</div>
+                <p style="margin-top: 1rem; color: var(--gray-600);">
+                    All internship opportunities are verified and approved by government standards
+                </p>
+            </div>
+        </div>
+
+        <!-- Success Stories Section -->
+        <div style="margin: 4rem 0;">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h2 style="font-size: 2.5rem; font-weight: 800; color: white; margin-bottom: 1rem;">
+                    <i class="fas fa-star" style="color: #ffd700; margin-right: 15px;"></i>
+                    Success Stories from Real Students
+                </h2>
+                <p style="font-size: 1.2rem; color: rgba(255, 255, 255, 0.9); max-width: 600px; margin: 0 auto;">
+                    See how PM Internship Scheme transformed careers across India
+                </p>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="stats-card" style="text-align: left;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiNGMDkzRkIiLz4KPHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4PSI4IiB5PSI4Ij4KPHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyUzYuNDggMjIgMTIgMjJTMjIgMTcuNTIgMjIgMTJTMTcuNTIgMiAxMiAyWk0xMyAxN0gxMVYxNUgxM1YxN1pNMTMgMTNIMTFWN0gxM1YxM1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo8L3N2Zz4K" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 15px;">
+                        <div>
+                            <h4 style="margin: 0; color: white; font-weight: 600;">Priya Sharma</h4>
+                            <p style="margin: 0; color: var(--gray-400); font-size: 0.9rem;">IIT Delhi, Computer Science</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-300); line-height: 1.6; font-style: italic;">
+                        "Got placed at Google through PM Internship! The AI matching was so accurate - found my dream role in just 3 days. Stipend of ₹80,000/month!"
+                    </p>
+                    <div style="margin-top: 1rem; color: #10b981; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Software Engineer Intern at Google
+                    </div>
+                </div>
+
+                <div class="stats-card" style="text-align: left;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiMzQjgyRjYiLz4KPHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4PSI4IiB5PSI4Ij4KPHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyUzYuNDggMjIgMTIgMjJTMjIgMTcuNTIgMjIgMTJTMTcuNTIgMiAxMiAyWk0xMyAxN0gxMVYxNUgxM1YxN1pNMTMgMTNIMTFWN0gxM1YxM1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo8L3N2Zz4K" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 15px;">
+                        <div>
+                            <h4 style="margin: 0; color: white; font-weight: 600;">Arjun Patel</h4>
+                            <p style="margin: 0; color: var(--gray-400); font-size: 0.9rem;">NIT Surat, Mechanical Engineering</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-300); line-height: 1.6; font-style: italic;">
+                        "Amazing platform! Landed internship at Tata Motors with ₹25,000 monthly stipend. The mobile app made it so easy to apply on the go."
+                    </p>
+                    <div style="margin-top: 1rem; color: #10b981; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> Design Engineer Intern at Tata Motors
+                    </div>
+                </div>
+
+                <div class="stats-card" style="text-align: left;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiNGNTlFMEIiLz4KPHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4PSI4IiB5PSI4Ij4KPHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyUzYuNDggMjIgMTIgMjJTMjIgMTcuNTIgMjIgMTJTMTcuNTIgMiAxMiAyWk0xMyAxN0gxMVYxNUgxM1YxN1pNMTMgMTNIMTFWN0gxM1YxM1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo8L3N2Zz4K" style="width: 40px; height: 40px; border-radius: 50%; margin-right: 15px;">
+                        <div>
+                            <h4 style="margin: 0; color: white; font-weight: 600;">Sneha Reddy</h4>
+                            <p style="margin: 0; color: var(--gray-400); font-size: 0.9rem;">BITS Pilani, Data Science</p>
+                        </div>
+                    </div>
+                    <p style="color: var(--gray-300); line-height: 1.6; font-style: italic;">
+                        "Found my perfect match at Flipkart! The recommendation algorithm understood my interests perfectly. Now earning ₹45,000/month as ML intern."
+                    </p>
+                    <div style="margin-top: 1rem; color: #10b981; font-weight: 600;">
+                        <i class="fas fa-check-circle"></i> ML Engineer Intern at Flipkart
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Live Stats Section -->
+        <div style="margin: 4rem 0;">
+            <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); border-radius: 1.5rem; padding: 3rem; border: 1px solid rgba(255, 255, 255, 0.2);">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <h3 style="font-size: 2rem; font-weight: 700; color: white; margin-bottom: 1rem;">
+                        <i class="fas fa-chart-line" style="color: #10b981; margin-right: 15px;"></i>
+                        Live Platform Statistics
+                    </h3>
+                    <p style="color: rgba(255, 255, 255, 0.8);">Real-time data updated every minute</p>
+                </div>
+                
+                <div class="dashboard-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; font-weight: 800; color: #3b82f6; margin-bottom: 0.5rem;" id="activeUsers">12,847</div>
+                        <div style="color: white; font-weight: 600;">Active Users Today</div>
+                        <div style="color: #10b981; font-size: 0.9rem; margin-top: 0.5rem;">
+                            <i class="fas fa-arrow-up"></i> +234 from yesterday
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; font-weight: 800; color: #f093fb; margin-bottom: 0.5rem;" id="newInternships">47</div>
+                        <div style="color: white; font-weight: 600;">New Internships Today</div>
+                        <div style="color: #10b981; font-size: 0.9rem; margin-top: 0.5rem;">
+                            <i class="fas fa-arrow-up"></i> +12 from yesterday
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; font-weight: 800; color: #10b981; margin-bottom: 0.5rem;" id="successfulMatches">892</div>
+                        <div style="color: white; font-weight: 600;">Matches Made Today</div>
+                        <div style="color: #10b981; font-size: 0.9rem; margin-top: 0.5rem;">
+                            <i class="fas fa-arrow-up"></i> +67 from yesterday
+                        </div>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <div style="font-size: 3rem; font-weight: 800; color: #f59e0b; margin-bottom: 0.5rem;">₹28.5L</div>
+                        <div style="color: white; font-weight: 600;">Avg. Annual Package</div>
+                        <div style="color: #10b981; font-size: 0.9rem; margin-top: 0.5rem;">
+                            <i class="fas fa-arrow-up"></i> +8.2% this quarter
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div style="text-align: center; margin-top: 4rem;">
+            <div style="background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(20px); border-radius: 1.5rem; padding: 3rem; border: 1px solid rgba(255, 255, 255, 0.2);">
+                <h3 style="font-size: 2rem; font-weight: 700; color: white; margin-bottom: 1rem;">
+                    Ready to Start Your Journey?
+                </h3>
+                <p style="font-size: 1.1rem; color: rgba(255, 255, 255, 0.9); margin-bottom: 2rem; max-width: 500px; margin-left: auto; margin-right: auto;">
+                    Create your profile in under 2 minutes and get personalized internship recommendations instantly
+                </p>
+                <div class="welcome-buttons">
+                    <a href="/signup" class="btn btn-success" style="font-size: 1.1rem; padding: 1rem 2rem;">
+                        <i class="fas fa-rocket"></i>
+                        Get Started Now
+                    </a>
+                    <a href="/mobile-demo" class="btn btn-secondary">
+                        <i class="fas fa-mobile-alt"></i>
+                        View Mobile Demo
+                    </a>
+                </div>
+                
+                <div style="margin-top: 2rem; color: rgba(255, 255, 255, 0.8);">
+                    <p>🚀 Quick setup in 2 minutes • 🎯 AI-powered matching • 📱 Mobile optimized • 🔒 Government approved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="background: rgba(0, 0, 0, 0.3); backdrop-filter: blur(10px); margin-top: 4rem; padding: 2rem 0; border-top: 1px solid rgba(255, 255, 255, 0.1);">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+                <div>
+                    <h4 style="color: white; font-weight: 600; margin-bottom: 1rem;">PM Internship Scheme</h4>
+                    <p style="color: rgba(255, 255, 255, 0.7); line-height: 1.6;">
+                        Empowering India's youth with world-class internship opportunities through cutting-edge AI technology.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <span style="color: #10b981; font-weight: 600;">🇮🇳 Made in India with ❤️</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: white; font-weight: 600; margin-bottom: 1rem;">Quick Links</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <a href="/about" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">About Us</a>
+                        <a href="/help" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Help Center</a>
+                        <a href="/privacy" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Privacy Policy</a>
+                        <a href="/terms" style="color: rgba(255, 255, 255, 0.7); text-decoration: none;">Terms of Service</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 style="color: white; font-weight: 600; margin-bottom: 1rem;">Contact</h4>
+                    <div style="color: rgba(255, 255, 255, 0.7); line-height: 1.8;">
+                        <div><i class="fas fa-envelope"></i> support@pminternship.gov.in</div>
+                        <div><i class="fas fa-phone"></i> 1800-XXX-XXXX (Toll Free)</div>
+                        <div><i class="fas fa-map-marker-alt"></i> New Delhi, India</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem; text-align: center; color: rgba(255, 255, 255, 0.6);">
+                <p>&copy; 2024 Government of India. PM Internship Scheme. All rights reserved.</p>
+                <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                    Built with modern web technologies for the digital India initiative
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Live counter animation
+        function animateCounter(id, target, duration = 2000) {
+            const element = document.getElementById(id);
+            let start = 0;
+            const increment = target / (duration / 50);
+            
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start).toLocaleString();
+                }
+            }, 50);
+        }
+
+        // Language translations with more hardcoded data
+        const translations = {
+            en: {
+                welcome_title: "Welcome to Your Future",
+                welcome_subtitle: "Find the perfect internship opportunity that matches your skills, interests, and aspirations. Join thousands of students building their career with the PM Internship Scheme.",
+                students: "Students",
+                companies: "Companies", 
+                internships: "Internships",
+                why_choose: "Why Choose PM Internship Scheme?",
+                ai_powered: "AI-Powered Matching",
+                ai_description: "Our intelligent system matches you with internships that fit your profile perfectly.",
+                mobile_friendly: "Mobile Friendly",
+                mobile_description: "Access opportunities anywhere, anytime from your smartphone.",
+                skill_development: "Skill Development", 
+                skill_description: "Gain real-world experience and develop industry-relevant skills.",
+                certification: "Certification",
+                cert_description: "Receive certificates upon successful completion of internships.",
+                get_started: "Get Started",
+                sign_in: "Sign In",
+                quick_info: "🚀 Quick setup in under 2 minutes • 💼 Personalized recommendations • 📱 Mobile optimized",
+                about: "About",
+                help: "Help", 
+                privacy: "Privacy",
+                terms: "Terms"
+            },
+            hi: {
+                welcome_title: "अपने भविष्य में आपका स्वागत है",
+                welcome_subtitle: "अपने कौशल, रुचियों और आकांक्षाओं से मेल खाने वाला सही इंटर्नशिप अवसर खोजें। पीएम इंटर्नशिप योजना के साथ अपना करियर बनाने वाले हजारों छात्रों से जुड़ें।",
+                students: "छात्र",
+                companies: "कंपनियां",
+                internships: "इंटर्नशिप",
+                get_started: "शुरू करें",
+                sign_in: "साइन इन करें"
+            },
+            ta: {
+                welcome_title: "உங்கள் எதிர்காலத்திற்கு வரவேற்கிறோம்",
+                get_started: "தொடங்குங்கள்",
+                sign_in: "உள்நுழையுங்கள்"
+            }
+        };
+
+        // Sample company data for rotating display
+        const topCompanies = [
+            "Google", "Microsoft", "Amazon", "Flipkart", "Tata Consultancy Services",
+            "Infosys", "Wipro", "Accenture", "IBM", "Adobe", "Intel", "NVIDIA",
+            "Samsung", "LG Electronics", "Bajaj Auto", "Mahindra", "Hero MotoCorp",
+            "Asian Paints", "ITC Limited", "HDFC Bank", "ICICI Bank", "SBI"
+        ];
+
+        // Popular internship categories with counts
+        const internshipCategories = {
+            "Software Development": 2847,
+            "Data Science & Analytics": 1923,
+            "Digital Marketing": 1567,
+            "Mechanical Engineering": 1342,
+            "Finance & Banking": 1198,
+            "UI/UX Design": 987,
+            "Content Writing": 876,
+            "Business Development": 743,
+            "Civil Engineering": 654,
+            "Electrical Engineering": 589
+        };
+
+        // Initialize live counters when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate counters
+            animateCounter('activeUsers', 12847);
+            animateCounter('newInternships', 47);
+            animateCounter('successfulMatches', 892);
+            
+            // Update stats every 30 seconds to simulate real-time data
+            setInterval(updateLiveStats, 30000);
+            
+            // Rotating company showcase
+            rotateCompanyNames();
+            setInterval(rotateCompanyNames, 5000);
+        });
+
+        function updateLiveStats() {
+            // Simulate live data updates
+            const activeUsersEl = document.getElementById('activeUsers');
+            const newInternshipsEl = document.getElementById('newInternships');
+            const successfulMatchesEl = document.getElementById('successfulMatches');
+            
+            // Random increments to simulate real activity
+            const activeUsersIncrement = Math.floor(Math.random() * 10) + 1;
+            const newInternshipsIncrement = Math.floor(Math.random() * 3);
+            const successfulMatchesIncrement = Math.floor(Math.random() * 8) + 2;
+            
+            let currentActive = parseInt(activeUsersEl.textContent.replace(/,/g, ''));
+            let currentInternships = parseInt(newInternshipsEl.textContent);
+            let currentMatches = parseInt(successfulMatchesEl.textContent.replace(/,/g, ''));
+            
+            activeUsersEl.textContent = (currentActive + activeUsersIncrement).toLocaleString();
+            newInternshipsEl.textContent = currentInternships + newInternshipsIncrement;
+            successfulMatchesEl.textContent = (currentMatches + successfulMatchesIncrement).toLocaleString();
+        }
+
+        function rotateCompanyNames() {
+            const companyElements = document.querySelectorAll('.rotating-company');
+            companyElements.forEach(element => {
+                const randomCompany = topCompanies[Math.floor(Math.random() * topCompanies.length)];
+                element.textContent = randomCompany;
+            });
+        }
+
+        // Language selector functionality
+        document.getElementById('languageSelect').addEventListener('change', function() {
+            const selectedLang = this.value;
+            translatePage(selectedLang);
+        });
+
+        function translatePage(lang) {
+            const elements = document.querySelectorAll('[data-translate]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate');
+                if (translations[lang] && translations[lang][key]) {
+                    element.textContent = translations[lang][key];
+                }
+            });
+        }
+
+        // Add floating particles effect
+        function createFloatingParticles() {
+            const particlesContainer = document.createElement('div');
+            particlesContainer.className = 'floating-particles';
+            particlesContainer.style.cssText = `
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                pointer-events: none;
+                z-index: -1;
+            `;
+            
+            for (let i = 0; i < 20; i++) {
+                const particle = document.createElement('div');
+                particle.style.cssText = `
+                    position: absolute;
+                    width: ${Math.random() * 4 + 2}px;
+                    height: ${Math.random() * 4 + 2}px;
+                    background: rgba(240, 147, 251, 0.3);
+                    border-radius: 50%;
+                    animation: float ${Math.random() * 10 + 10}s infinite linear;
+                    left: ${Math.random() * 100}%;
+                    top: ${Math.random() * 100}%;
+                `;
+                particlesContainer.appendChild(particle);
+            }
+            
+            document.body.appendChild(particlesContainer);
+        }
+
+        // Add CSS animation for particles
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes float {
+                0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+                10% { opacity: 1; }
+                90% { opacity: 1; }
+                100% { transform: translateY(-100vh) rotate(360deg); opacity: 0; }
+            }
+            
+            .rotating-company {
+                transition: all 0.3s ease;
+            }
+            
+            .rotating-company:hover {
+                transform: scale(1.05);
+                color: #f093fb;
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Initialize particle effect
+        document.addEventListener('DOMContentLoaded', createFloatingParticles);
+    </script>
+</body>
+</html>

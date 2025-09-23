@@ -1,0 +1,191 @@
+{
+  "edit98528@gmail.com": {
+    "id": "4e48462f-b5ab-4774-9e3a-084864c1fa42",
+    "email": "edit98528@gmail.com",
+    "password": "xyzxyzXYZ",
+    "name": "Pari Behl",
+    "phone": "+91 98765 43210",
+    "profile_complete": true,
+    "created_at": "2025-09-23T11:41:04.798506",
+    "profile": {
+      "education": "BTech Computer Science",
+      "college": "IIT Delhi",
+      "year": "Final Year",
+      "skills": ["Python", "Machine Learning", "React", "Node.js", "MongoDB"],
+      "interests": ["Artificial Intelligence", "Web Development", "Data Science"],
+      "location": "Delhi",
+      "experience_level": "Intermediate",
+      "bio": "Passionate computer science student with expertise in AI/ML and full-stack development. Looking for opportunities to apply skills in real-world projects.",
+      "achievements": ["Won Smart India Hackathon 2024", "Google Summer of Code Participant", "Published research paper on ML"],
+      "certifications": ["AWS Cloud Practitioner", "Google Cloud Professional", "Microsoft Azure Fundamentals"]
+    }
+  },
+  "sambehl88@gmail.com": {
+    "id": "0ec1e657-a010-4b08-b33f-c8a0f673ddbc",
+    "email": "sambehl88@gmail.com", 
+    "password": "xyzxyzxyz",
+    "name": "Sam Behl",
+    "phone": "+91 98765 54321",
+    "profile_complete": true,
+    "created_at": "2025-09-23T12:01:34.524704",
+    "profile": {
+      "education": "MBA Finance",
+      "college": "IIM Bangalore",
+      "year": "Second Year",
+      "skills": ["Financial Modeling", "Data Analysis", "Excel", "PowerBI", "Python"],
+      "interests": ["Investment Banking", "Corporate Finance", "Fintech"],
+      "location": "Bangalore",
+      "experience_level": "Advanced",
+      "bio": "MBA student with strong analytical skills and passion for financial markets. Seeking challenging internship in investment banking or fintech.",
+      "achievements": ["Summer internship at Goldman Sachs", "CFA Level 1 cleared", "Dean's List for Academic Excellence"],
+      "certifications": ["FRM Part 1", "Bloomberg Market Concepts", "Financial Risk Manager"]
+    }
+  },
+  "priya.sharma@gmail.com": {
+    "id": "demo-user-1",
+    "email": "priya.sharma@gmail.com",
+    "password": "demo123",
+    "name": "Priya Sharma",
+    "phone": "+91 98765 12345",
+    "profile_complete": true,
+    "created_at": "2025-01-15T10:30:00.000000",
+    "profile": {
+      "education": "BTech Computer Science",
+      "college": "IIT Delhi",
+      "year": "Final Year",
+      "skills": ["Java", "Spring Boot", "React", "AWS", "Docker"],
+      "interests": ["Software Development", "Cloud Computing", "DevOps"],
+      "location": "Delhi",
+      "experience_level": "Intermediate",
+      "bio": "Final year CS student with strong programming skills. Completed multiple projects and internships in software development.",
+      "achievements": ["Google Summer of Code 2024", "ACM-ICPC Regionalist", "Published paper on distributed systems"],
+      "certifications": ["AWS Solutions Architect", "Oracle Java Certified", "Red Hat Certified Engineer"]
+    }
+  },
+  "arjun.patel@gmail.com": {
+    "id": "demo-user-2", 
+    "email": "arjun.patel@gmail.com",
+    "password": "demo123",
+    "name": "Arjun Patel",
+    "phone": "+91 98765 67890",
+    "profile_complete": true,
+    "created_at": "2025-01-20T14:45:00.000000",
+    "profile": {
+      "education": "BTech Mechanical Engineering",
+      "college": "NIT Surat",
+      "year": "Third Year", 
+      "skills": ["CAD Design", "SolidWorks", "AutoCAD", "Manufacturing", "Quality Control"],
+      "interests": ["Automotive Engineering", "Product Design", "Manufacturing"],
+      "location": "Surat",
+      "experience_level": "Intermediate",
+      "bio": "Mechanical engineering student passionate about automotive design and manufacturing. Hands-on experience with CAD tools.",
+      "achievements": ["Winner SAE Baja Competition", "Internship at Tata Motors", "Patent filed for mechanical device"],
+      "certifications": ["SolidWorks Professional", "AutoCAD Certified User", "Six Sigma Yellow Belt"]
+    }
+  },
+  "sneha.reddy@gmail.com": {
+    "id": "demo-user-3",
+    "email": "sneha.reddy@gmail.com", 
+    "password": "demo123",
+    "name": "Sneha Reddy",
+    "phone": "+91 98765 11111",
+    "profile_complete": true,
+    "created_at": "2025-02-01T09:15:00.000000",
+    "profile": {
+      "education": "MTech Data Science",
+      "college": "BITS Pilani",
+      "year": "Second Year",
+      "skills": ["Python", "Machine Learning", "Deep Learning", "TensorFlow", "SQL"],
+      "interests": ["Artificial Intelligence", "Data Analytics", "Computer Vision"],
+      "location": "Hyderabad", 
+      "experience_level": "Advanced",
+      "bio": "Data science graduate student with expertise in ML and AI. Published research in top conferences and worked on industry projects.",
+      "achievements": ["Best Paper Award ICML 2024", "Kaggle Expert", "Internship at Microsoft Research"],
+      "certifications": ["TensorFlow Developer", "Google Cloud ML Engineer", "Databricks Certified"]
+    }
+  },
+  "rajesh.kumar@gmail.com": {
+    "id": "demo-user-4",
+    "email": "rajesh.kumar@gmail.com",
+    "password": "demo123", 
+    "name": "Rajesh Kumar",
+    "phone": "+91 98765 22222",
+    "profile_complete": true,
+    "created_at": "2025-02-05T16:20:00.000000",
+    "profile": {
+      "education": "MBA Marketing",
+      "college": "IIM Ahmedabad",
+      "year": "First Year",
+      "skills": ["Digital Marketing", "Brand Management", "Market Research", "Analytics", "Communication"],
+      "interests": ["Brand Strategy", "Digital Transformation", "Consumer Behavior"],
+      "location": "Ahmedabad",
+      "experience_level": "Advanced",
+      "bio": "MBA student with 3 years of marketing experience in FMCG sector. Passionate about brand building and digital marketing.",
+      "achievements": ["Brand Manager at Unilever", "Increased brand awareness by 45%", "Led successful product launch"],
+      "certifications": ["Google Ads Certified", "HubSpot Certified", "Facebook Blueprint Certified"]
+    }
+  },
+  "anita.gupta@gmail.com": {
+    "id": "demo-user-5",
+    "email": "anita.gupta@gmail.com",
+    "password": "demo123",
+    "name": "Anita Gupta", 
+    "phone": "+91 98765 33333",
+    "profile_complete": true,
+    "created_at": "2025-02-10T11:30:00.000000",
+    "profile": {
+      "education": "BCom Accounting",
+      "college": "Delhi University",
+      "year": "Final Year",
+      "skills": ["Accounting", "Financial Analysis", "Excel", "Tally", "GST"],
+      "interests": ["Financial Planning", "Taxation", "Audit"],
+      "location": "Delhi",
+      "experience_level": "Beginner",
+      "bio": "Commerce graduate with strong foundation in accounting and finance. Aspiring to become a Chartered Accountant.",
+      "achievements": ["Rank 1 in University", "Completed CA Foundation", "Internship at Big 4 firm"],
+      "certifications": ["Tally Certified", "Advanced Excel", "GST Practitioner"]
+    }
+  },
+  "vikram.singh@gmail.com": {
+    "id": "demo-user-6",
+    "email": "vikram.singh@gmail.com",
+    "password": "demo123",
+    "name": "Vikram Singh",
+    "phone": "+91 98765 44444", 
+    "profile_complete": true,
+    "created_at": "2025-02-15T13:45:00.000000",
+    "profile": {
+      "education": "BDes Product Design",
+      "college": "NID Ahmedabad",
+      "year": "Final Year",
+      "skills": ["UI/UX Design", "Figma", "Adobe Creative Suite", "Prototyping", "User Research"],
+      "interests": ["Product Design", "User Experience", "Design Thinking"],
+      "location": "Ahmedabad",
+      "experience_level": "Intermediate", 
+      "bio": "Design student passionate about creating user-centered products. Experience in both digital and physical product design.",
+      "achievements": ["Design internship at Flipkart", "Won India Design Challenge", "Featured in design magazine"],
+      "certifications": ["Google UX Design Certificate", "Adobe Certified Expert", "Design Thinking Certified"]
+    }
+  },
+  "kavya.nair@gmail.com": {
+    "id": "demo-user-7",
+    "email": "kavya.nair@gmail.com",
+    "password": "demo123",
+    "name": "Kavya Nair",
+    "phone": "+91 98765 55555",
+    "profile_complete": true,
+    "created_at": "2025-02-20T15:00:00.000000",
+    "profile": {
+      "education": "BTech Electronics",
+      "college": "IIT Madras", 
+      "year": "Third Year",
+      "skills": ["Circuit Design", "MATLAB", "Python", "IoT", "Embedded Systems"],
+      "interests": ["Electronics", "IoT", "Robotics"],
+      "location": "Chennai",
+      "experience_level": "Intermediate",
+      "bio": "Electronics engineering student with hands-on experience in IoT and embedded systems. Built several innovative projects.",
+      "achievements": ["Winner Smart India Hackathon", "IEEE Student Member", "Published in IEEE conference"],
+      "certifications": ["Cisco IoT Certified", "ARM Certified", "MATLAB Certified"]
+    }
+  }
+}
