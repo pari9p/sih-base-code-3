@@ -251,6 +251,13 @@
       "internship_title": "AI/ML Intern (Premium)",
       "status": "applied",
       "applied_at": "2025-09-24T13:20:17.395835"
+    },
+    {
+      "id": "1ef1aff9-cfc1-461f-8863-159749a0ddae",
+      "internship_id": 1,
+      "internship_title": "AI/ML Engineer Intern - Premium",
+      "status": "saved",
+      "saved_at": "2025-09-24T15:19:41.707642"
     }
   ]
 }
