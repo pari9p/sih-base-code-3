@@ -17,7 +17,7 @@
       },
       {
         "status": "screening",
-        "date": "2025-09-16T09:15:00.000000", 
+        "date": "2025-09-16T09:15:00.000000",
         "description": "Application under review by HR team"
       },
       {
@@ -39,7 +39,7 @@
     }
   },
   "app-002": {
-    "id": "app-002", 
+    "id": "app-002",
     "user_id": "0ec1e657-a010-4b08-b33f-c8a0f673ddbc",
     "internship_id": 10,
     "internship_title": "Finance Analyst Intern",
@@ -55,13 +55,13 @@
         "description": "Application submitted for finance analyst position"
       },
       {
-        "status": "screening", 
+        "status": "screening",
         "date": "2025-09-12T14:30:00.000000",
         "description": "Initial screening completed by finance team"
       },
       {
         "status": "shortlisted",
-        "date": "2025-09-15T09:45:00.000000", 
+        "date": "2025-09-15T09:45:00.000000",
         "description": "Selected for case study round"
       },
       {
@@ -76,16 +76,16 @@
       }
     ],
     "offer_details": {
-      "stipend": "₹22,000/month",
+      "stipend": "\u00e2\u201a\u00b922,000/month",
       "start_date": "2025-10-01",
-      "duration": "6 months", 
+      "duration": "6 months",
       "reporting_manager": "Ravi Kumar, VP Finance",
       "location": "Gurgaon Office"
     }
   },
   "app-003": {
     "id": "app-003",
-    "user_id": "demo-user-1", 
+    "user_id": "demo-user-1",
     "internship_id": 4,
     "internship_title": "Software Development Intern",
     "company": "TCS Innovation Labs",
@@ -95,7 +95,7 @@
     "cover_letter": "Experienced Java developer with Spring Boot expertise. Looking forward to contributing to enterprise solutions at TCS.",
     "timeline": [
       {
-        "status": "applied", 
+        "status": "applied",
         "date": "2025-09-12T09:00:00.000000",
         "description": "Application submitted for software development role"
       },
@@ -116,7 +116,7 @@
     "id": "app-004",
     "user_id": "demo-user-2",
     "internship_id": 11,
-    "internship_title": "Mechanical Engineering Intern", 
+    "internship_title": "Mechanical Engineering Intern",
     "company": "Tata Motors",
     "status": "rejected",
     "applied_date": "2025-09-08T14:20:00.000000",
@@ -130,7 +130,7 @@
       },
       {
         "status": "screening",
-        "date": "2025-09-10T10:00:00.000000", 
+        "date": "2025-09-10T10:00:00.000000",
         "description": "Application review in progress"
       },
       {
@@ -146,7 +146,7 @@
     "user_id": "demo-user-3",
     "internship_id": 3,
     "internship_title": "Data Science Intern",
-    "company": "Flipkart", 
+    "company": "Flipkart",
     "status": "applied",
     "applied_date": "2025-09-21T13:15:00.000000",
     "last_updated": "2025-09-21T13:15:00.000000",
@@ -161,7 +161,7 @@
   },
   "app-006": {
     "id": "app-006",
-    "user_id": "demo-user-4", 
+    "user_id": "demo-user-4",
     "internship_id": 6,
     "internship_title": "Digital Marketing Intern",
     "company": "Bajaj Finserv",
@@ -189,7 +189,7 @@
     "internship_title": "Finance Analyst Intern",
     "company": "HDFC Bank",
     "status": "withdrawn",
-    "applied_date": "2025-09-14T10:45:00.000000", 
+    "applied_date": "2025-09-14T10:45:00.000000",
     "last_updated": "2025-09-19T14:20:00.000000",
     "cover_letter": "Final year BCom student aspiring to work in banking sector. Strong foundation in accounting and financial analysis.",
     "timeline": [
@@ -208,7 +208,7 @@
   },
   "app-008": {
     "id": "app-008",
-    "user_id": "demo-user-6", 
+    "user_id": "demo-user-6",
     "internship_id": 8,
     "internship_title": "UI/UX Design Intern",
     "company": "Zomato",
@@ -228,7 +228,7 @@
         "description": "Portfolio review completed, design challenge assigned"
       },
       {
-        "status": "shortlisted", 
+        "status": "shortlisted",
         "date": "2025-09-17T14:45:00.000000",
         "description": "Design challenge submitted successfully"
       },
@@ -243,5 +243,14 @@
       "interviewer": "Sarah Patel, Lead Designer",
       "feedback": "Impressive portfolio with strong user-centered approach. Creative solutions demonstrated."
     }
-  }
+  },
+  "edit98528@gmail.com": [
+    {
+      "id": "39123dbe-961f-4505-a64d-b6450c21378a",
+      "internship_id": "999",
+      "internship_title": "AI/ML Intern (Premium)",
+      "status": "applied",
+      "applied_at": "2025-09-24T13:20:17.395835"
+    }
+  ]
 }
