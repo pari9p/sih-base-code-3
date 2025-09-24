@@ -347,6 +347,11 @@ def easy_apply():
     """Easy Apply page"""
     return render_template('easy_apply.html')
 
+@app.route('/read-aloud')
+def read_aloud():
+    """Read Aloud page for accessibility"""
+    return "Read Aloud functionality coming soon!"
+
 if __name__ == '__main__':
     # Ensure data directory exists
     os.makedirs('data', exist_ok=True)
