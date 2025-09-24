@@ -2206,22 +2206,99 @@ footer::before {
 
 /* Language Selector Enhancement */
 .language-selector select {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    background: rgba(255, 255, 255, 0.95);
+    border: 2px solid #e2e8f0;
+    color: #1e293b;
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+.language-selector select:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: var(--primary);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .language-selector select:focus {
     outline: none;
-    border-color: #f093fb;
-    box-shadow: 0 0 0 3px rgba(240, 147, 251, 0.2);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    background: white;
 }
 
 .language-selector option {
-    background: #1a1a2e;
-    color: white;
+    background: white;
+    color: #1e293b;
+    padding: 8px 12px;
+    font-weight: 500;
+    border: none;
+}
+
+/* Specific styling for language selector in different contexts */
+select#languageSelect {
+    background: white !important;
+    border: 2px solid #e2e8f0 !important;
+    color: #1e293b !important;
+    padding: 8px 12px !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    min-width: 120px !important;
+}
+
+select#languageSelect:focus {
+    outline: none !important;
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
+}
+
+select#languageSelect option {
+    background: white !important;
+    color: #1e293b !important;
+    padding: 8px 12px !important;
+    font-weight: 500 !important;
+}
+
+/* Additional fix for browser compatibility */
+select#languageSelect option:checked {
+    background: var(--primary) !important;
+    color: white !important;
+}
+
+/* Navigation language selector specific styling */
+.nav-menu .language-selector {
+    display: flex;
+    align-items: center;
+    margin: 0 var(--space-md);
+}
+
+.nav-menu .language-selector select {
+    background: white !important;
+    color: #1e293b !important;
+    border: 2px solid #e2e8f0 !important;
+    border-radius: 8px !important;
+    padding: 8px 12px !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    min-width: 120px !important;
+    cursor: pointer !important;
+}
+
+.nav-menu .language-selector select:hover {
+    border-color: var(--primary) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.nav-menu .language-selector select:focus {
+    outline: none !important;
+    border-color: var(--primary) !important;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1) !important;
 }
 
 /* Floating Particles Container */
