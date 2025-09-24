@@ -332,6 +332,11 @@ def mobile_demo():
     """Mobile compatibility demonstration page"""
     return render_template('mobile-demo.html')
 
+@app.route('/feedback')
+def feedback():
+    """Feedback page"""
+    return render_template('feedback.html')
+
 if __name__ == '__main__':
     # Ensure data directory exists
     os.makedirs('data', exist_ok=True)
