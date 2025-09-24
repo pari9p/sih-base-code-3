@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy Apply</title>
+    <link rel="stylesheet" href="../static/css/beautiful.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .internship-card {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .badge {
+            display: inline-block;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 12px;
+            margin-right: 5px;
+        }
+        .verified {
+            background-color: #28a745;
+        }
+        .apply-options {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .apply-btn {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            text-align: center;
+        }
+        .apply-btn:hover {
+            background-color: #0056b3;
+        }
+        .smart-form {
+            margin-bottom: 20px;
+        }
+        .smart-form input, .smart-form select, .smart-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .toggle-save {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .toggle-save input {
+            margin-right: 10px;
+        }
+        .preview-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        .cta-section {
+            display: flex;
+            gap: 10px;
+        }
+        .cta-btn {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .cta-btn-primary {
+            background-color: #28a745;
+            color: #fff;
+        }
+        .cta-btn-primary:hover {
+            background-color: #218838;
+        }
+        .cta-btn-secondary {
+            background-color: #ffc107;
+            color: #fff;
+        }
+        .cta-btn-secondary:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="internship-card">
+            <h2>Marketing Intern</h2>
+            <p>Company: XYZ Pvt Ltd</p>
+            <p>Department: Management Studies</p>
+            <p>Location: Sector 12, Delhi</p>
+            <span class="badge">₹10,000/month</span>
+            <span class="badge">3 months</span>
+            <span class="badge verified">Verified</span>
+        </div>
+
+        <h2>Choose Easy Apply Method</h2>
+        <div class="apply-options">
+            <button class="apply-btn">📄 Upload Resume</button>
+            <button class="apply-btn">📂 Connect DigiLocker</button>
+        </div>
+
+        <h2>Auto-filled Details</h2>
+        <div class="smart-form">
+            <input type="text" value="Ravi Sharma" placeholder="Name">
+            <input type="text" value="Delhi University" placeholder="College">
+            <input type="text" value="Computer Science" placeholder="Department">
+            <textarea placeholder="Skills">Python, SQL</textarea>
+            <input type="text" placeholder="Portfolio/GitHub Link">
+            <div class="toggle-save">
+                <input type="checkbox" id="save-details">
+                <label for="save-details">Save details for future applies</label>
+            </div>
+        </div>
+
+        <h2>Preview Application</h2>
+        <div class="preview-card">
+            <p><strong>Resume Extracted:</strong> Python, SQL</p>
+            <p><strong>DigiLocker Verified:</strong> Marksheets, Aadhaar</p>
+            <p><strong>Contact Info:</strong> Ravi Sharma, Delhi University</p>
+        </div>
+
+        <div class="cta-section">
+            <button class="cta-btn cta-btn-primary">Apply Now – 1 Click</button>
+            <button class="cta-btn cta-btn-secondary">Save for Later</button>
+        </div>
+
+        <footer>
+            <p>✅ Application submitted. You’ll be notified by email + app.</p>
+        </footer>
+    </div>
+</body>
+</html>

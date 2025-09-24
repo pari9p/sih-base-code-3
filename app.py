@@ -342,6 +342,11 @@ def review():
     """Internship Review & Experience page"""
     return render_template('review.html')
 
+@app.route('/easy-apply')
+def easy_apply():
+    """Easy Apply page"""
+    return render_template('easy_apply.html')
+
 if __name__ == '__main__':
     # Ensure data directory exists
     os.makedirs('data', exist_ok=True)
