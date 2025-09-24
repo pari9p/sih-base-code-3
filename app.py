@@ -337,6 +337,11 @@ def feedback():
     """Feedback page"""
     return render_template('feedback.html')
 
+@app.route('/review')
+def review():
+    """Internship Review & Experience page"""
+    return render_template('review.html')
+
 if __name__ == '__main__':
     # Ensure data directory exists
     os.makedirs('data', exist_ok=True)

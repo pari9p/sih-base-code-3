@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Review & Experience</title>
+    <link rel="stylesheet" href="../static/css/beautiful.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        .internship-card {
+            background: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        .reviews-section {
+            margin-bottom: 20px;
+        }
+        .review-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .review-card h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+        .review-card p {
+            margin: 5px 0;
+        }
+        .review-card .rating {
+            color: #ffd700;
+        }
+        .review-card .likes-dislikes {
+            display: flex;
+            gap: 10px;
+            font-size: 14px;
+        }
+        .review-form {
+            margin-top: 20px;
+        }
+        .review-form textarea, .review-form input, .review-form select {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .review-form button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .review-form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="internship-card">
+            <h2>Marketing Intern</h2>
+            <p>Company: XYZ Pvt Ltd</p>
+            <p>Department: Management Studies</p>
+            <p>Sector: Sector 12, Delhi</p>
+        </div>
+
+        <h2>Reviews & Experiences</h2>
+        <div class="reviews-section">
+            <div class="review-card">
+                <h3>Ravi Sharma</h3>
+                <p class="rating">⭐⭐⭐⭐</p>
+                <p>Department: Computer Science Dept</p>
+                <p>Got exposure to real projects, workload a bit high.</p>
+                <p>Date: 12 Sept 2025</p>
+                <div class="likes-dislikes">
+                    <span>👍 12</span>
+                    <span>👎 1</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <h3>Anonymous</h3>
+                <p class="rating">⭐⭐⭐</p>
+                <p>Flexible WFH, but stipend was too low.</p>
+                <p>Date: 10 Sept 2025</p>
+                <div class="likes-dislikes">
+                    <span>👍 8</span>
+                    <span>👎 0</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <h3>Priya Singh</h3>
+                <p class="rating">⭐⭐⭐⭐⭐</p>
+                <p>Department: Finance Dept</p>
+                <p>Amazing experience! Great networking, PPO offered.</p>
+                <p>Date: 8 Sept 2025</p>
+                <div class="likes-dislikes">
+                    <span>👍 15</span>
+                    <span>👎 3</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <h3>Aman Verma</h3>
+                <p class="rating">⭐⭐</p>
+                <p>Department: Mechanical Engg Dept</p>
+                <p>Work was repetitive, not much learning.</p>
+                <p>Date: 6 Sept 2025</p>
+                <div class="likes-dislikes">
+                    <span>👍 5</span>
+                    <span>👎 2</span>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <h3>Anjali Gupta</h3>
+                <p class="rating">⭐⭐⭐⭐</p>
+                <p>Department: Arts Dept</p>
+                <p>Supportive mentor, but deadlines were very tight.</p>
+                <p>Date: 4 Sept 2025</p>
+                <div class="likes-dislikes">
+                    <span>👍 10</span>
+                    <span>👎 1</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="review-form">
+            <h3>Submit Your Review</h3>
+            <select>
+                <option value="">⭐ Rate the Internship</option>
+                <option value="1">⭐</option>
+                <option value="2">⭐⭐</option>
+                <option value="3">⭐⭐⭐</option>
+                <option value="4">⭐⭐⭐⭐</option>
+                <option value="5">⭐⭐⭐⭐⭐</option>
+            </select>
+            <textarea placeholder="Write your comment..."></textarea>
+            <input type="text" placeholder="Your Department">
+            <label><input type="checkbox"> Post as Anonymous</label>
+            <button>Submit Review</button>
+        </div>
+    </div>
+</body>
+</html>
