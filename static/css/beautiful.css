@@ -786,7 +786,8 @@ textarea:focus {
     justify-content: center;
     padding: var(--space-md);
     position: relative;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .auth-page::before {
@@ -805,6 +806,7 @@ textarea:focus {
     max-width: 420px;
     position: relative;
     z-index: 1;
+    margin: auto;
 }
 
 .auth-card {
@@ -815,6 +817,142 @@ textarea:focus {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     animation: slideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    margin: var(--space-md) 0;
+    max-height: calc(100vh - 2 * var(--space-md));
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-light) transparent;
+    position: relative;
+}
+
+/* Custom Scrollbar Styling */
+.auth-card::-webkit-scrollbar {
+    width: 6px;
+}
+
+.auth-card::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+}
+
+.auth-card::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, var(--primary-light), var(--primary));
+    border-radius: 10px;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.auth-card::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, var(--primary), var(--secondary));
+    opacity: 1;
+}
+
+/* Scroll Fade Effect */
+.auth-card::before {
+    content: '';
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(180deg, var(--white) 0%, transparent 100%);
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.auth-card.scrolled::before {
+    opacity: 1;
+}
+
+.auth-card::after {
+    content: '';
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: linear-gradient(0deg, var(--white) 0%, transparent 100%);
+    z-index: 10;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.auth-card.has-more::after {
+    opacity: 1;
+}
+
+/* Form Focus Within Enhancement */
+.auth-form:focus-within .form-group:not(:focus-within) {
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.auth-form .form-group:focus-within {
+    opacity: 1;
+    transform: translateY(-2px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.auth-form .form-group:hover {
+    transform: translateY(-1px);
+    transition: transform 0.2s ease;
+}
+
+/* Enhanced Input Focus States */
+.form-group input:focus {
+    box-shadow: 0 0 0 3px rgba(129, 140, 248, 0.1);
+    transform: translateY(-1px);
+}
+
+.form-group input:focus + .toggle-password {
+    color: var(--primary);
+}
+
+/* Smooth scroll padding for better UX */
+.auth-card {
+    scroll-padding: var(--space-xl);
+}
+
+/* Progressive Enhancement for Scroll Indicators */
+@supports (scroll-behavior: smooth) {
+    .auth-card {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Scroll Progress Indicator */
+.auth-card .scroll-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 0 0 3px 0;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform 0.1s ease-out;
+    z-index: 11;
+    opacity: 0;
+}
+
+.auth-card.scrolled .scroll-progress {
+    opacity: 1;
+}
+
+/* Scroll Snap for Better Mobile Experience */
+@media (max-width: 768px) {
+    .auth-card {
+        scroll-snap-type: y proximity;
+    }
+    
+    .form-group {
+        scroll-snap-align: start;
+    }
 }
 
 @keyframes slideUp {
@@ -887,6 +1025,9 @@ textarea:focus {
     display: flex;
     flex-direction: column;
     gap: var(--space-sm);
+    margin-bottom: var(--space-lg);
+    scroll-margin-top: var(--space-xl);
+    scroll-margin-bottom: var(--space-xl);
 }
 
 .form-group label {
@@ -1152,11 +1293,27 @@ textarea:focus {
 @media (max-width: 480px) {
     .auth-page {
         padding: var(--space-sm);
+        align-items: flex-start;
+        padding-top: var(--space-xl);
     }
     
     .auth-card {
         padding: var(--space-xl);
         border-radius: var(--radius-xl);
+        margin: var(--space-sm) 0;
+        max-height: calc(100vh - 2 * var(--space-sm));
+        scroll-padding-top: var(--space-lg);
+        scroll-padding-bottom: var(--space-lg);
+    }
+    
+    /* Mobile Scrollbar */
+    .auth-card::-webkit-scrollbar {
+        width: 4px;
+    }
+    
+    .auth-card::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 6px;
     }
     
     .auth-header h2 {

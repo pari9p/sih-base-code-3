@@ -11,6 +11,7 @@
 <body class="auth-page">
     <div class="auth-container">
         <div class="auth-card">
+            <div class="scroll-progress"></div>
             <div class="auth-header">
                 <a href="/" class="back-link">
                     <i class="fas fa-arrow-left"></i> Back
@@ -115,6 +116,41 @@
             const confirmPasswordField = document.getElementById('confirmPassword');
             const emailField = document.getElementById('email');
             const nameField = document.getElementById('name');
+            const authCard = document.querySelector('.auth-card');
+
+            // Handle scroll visual feedback
+            function handleScrollFeedback() {
+                const scrollTop = authCard.scrollTop;
+                const scrollHeight = authCard.scrollHeight;
+                const clientHeight = authCard.clientHeight;
+                const scrollProgress = authCard.querySelector('.scroll-progress');
+                
+                // Add scrolled class if scrolled from top
+                if (scrollTop > 10) {
+                    authCard.classList.add('scrolled');
+                } else {
+                    authCard.classList.remove('scrolled');
+                }
+                
+                // Add has-more class if there's more content below
+                if (scrollTop + clientHeight < scrollHeight - 10) {
+                    authCard.classList.add('has-more');
+                } else {
+                    authCard.classList.remove('has-more');
+                }
+                
+                // Update scroll progress bar
+                if (scrollProgress && scrollHeight > clientHeight) {
+                    const progress = scrollTop / (scrollHeight - clientHeight);
+                    scrollProgress.style.transform = `scaleX(${Math.min(progress, 1)})`;
+                }
+            }
+
+            // Initial check and scroll listener
+            if (authCard) {
+                handleScrollFeedback();
+                authCard.addEventListener('scroll', handleScrollFeedback);
+            }
 
             // Email validation
             emailField.addEventListener('blur', function() {
@@ -168,6 +204,13 @@
                 errorDiv.className = 'field-error';
                 errorDiv.textContent = message;
                 element.parentNode.appendChild(errorDiv);
+                
+                // Smooth scroll to error if it's not visible
+                element.scrollIntoView({ 
+                    behavior: 'smooth', 
+                    block: 'center',
+                    inline: 'nearest'
+                });
             }
 
             function hideValidationError(element) {
