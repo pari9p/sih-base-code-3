@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify, session, redirect, u
 import json
 import os
 from models.user import User
-from models.recommender import InternshipRecommender
+from models.recommender import AIInternshipRecommender
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'pm-internship-scheme-2024'
@@ -10,15 +10,15 @@ app.config['SECRET_KEY'] = 'pm-internship-scheme-2024'
 # Initialize user management
 user_manager = User()
 
-# Initialize recommender
-recommender = InternshipRecommender()
+# Initialize AI-based recommender
+ai_recommender = AIInternshipRecommender()
 
 # Load internship data (for explore, etc.)
 def load_internships():
     with open('data/internships.json', 'r') as f:
         return json.load(f)
 
-# Use advanced recommender for all recommendations
+# Use AI-based recommender for all recommendations
 def get_internship_recommendations(candidate_data):
     # Convert skills to list if string
     skills = candidate_data.get('skills', '')
@@ -26,13 +26,13 @@ def get_internship_recommendations(candidate_data):
         skills = [s.strip() for s in skills.split(',') if s.strip()]
     candidate_data = candidate_data.copy()
     candidate_data['skills'] = skills
-    return recommender.get_recommendations(candidate_data)
+    return ai_recommender.get_ai_recommendations(candidate_data)
 
 def get_available_sectors():
-    return recommender.get_available_sectors()
+    return ai_recommender.get_available_sectors()
 
 def get_available_locations():
-    return recommender.get_available_locations()
+    return ai_recommender.get_available_locations()
 
 @app.route('/')
 def welcome():
@@ -327,6 +327,66 @@ def get_locations():
             'error': str(e)
         }), 500
 
+@app.route('/api/ai-match', methods=['POST'])
+def ai_match_internships():
+    """AI-Based Smart Allocation API endpoint"""
+    try:
+        candidate_data = request.get_json()
+        
+        if not candidate_data:
+            return jsonify({'error': 'No candidate data provided'}), 400
+        
+        # Enhanced validation for AI matching
+        required_fields = ['skills', 'education']
+        for field in required_fields:
+            if field not in candidate_data:
+                return jsonify({'error': f'Missing required field: {field}'}), 400
+        
+        # Set default values for optional AI features
+        candidate_data.setdefault('social_category', 'General')
+        candidate_data.setdefault('district_type', 'Urban')
+        candidate_data.setdefault('past_participation', False)
+        candidate_data.setdefault('expected_stipend', 15000)
+        candidate_data.setdefault('experience_months', 0)
+        candidate_data.setdefault('certifications', [])
+        candidate_data.setdefault('cgpa', 7.0)
+        
+        # Get AI-based recommendations
+        ai_recommendations = ai_recommender.get_ai_recommendations(candidate_data)
+        
+        # Format response with AI matching details
+        formatted_recommendations = []
+        for rec in ai_recommendations:
+            formatted_rec = rec.copy()
+            formatted_rec['matching_details'] = {
+                'ai_match_score': rec.get('ai_match_score', 0),
+                'rule_based_score': rec.get('rule_score', 0),
+                'affirmative_action_applied': rec.get('affirmative_action_priority', 0) > 0,
+                'available_positions': rec.get('available_positions', 0),
+                'capacity_utilization': rec.get('capacity_utilization', 0)
+            }
+            formatted_recommendations.append(formatted_rec)
+        
+        return jsonify({
+            'success': True,
+            'ai_recommendations': formatted_recommendations,
+            'total_matches': len(formatted_recommendations),
+            'matching_algorithm': 'AI-Based Smart Allocation Engine',
+            'features_applied': [
+                'Skills-based matching',
+                'Affirmative action consideration', 
+                'Capacity constraint checking',
+                'Diversity optimization',
+                'Machine learning scoring'
+            ]
+        })
+        
+    except Exception as e:
+        return jsonify({
+            'success': False,
+            'error': str(e)
+        }), 500
+
 @app.route('/mobile-demo')
 def mobile_demo():
     """Mobile compatibility demonstration page"""
@@ -351,6 +411,21 @@ def easy_apply():
 def read_aloud():
     """Read Aloud page for accessibility"""
     return "Read Aloud functionality coming soon!"
+
+@app.route('/ai-demo')
+def ai_demo():
+    """AI Matching Demo page"""
+    return render_template('ai_demo.html')
+
+@app.route('/matchmaking')
+def matchmaking():
+    """Advanced AI Matchmaking Interface"""
+    return render_template('matchmaking.html')
+
+@app.route('/test-frontend')
+def test_frontend():
+    """Frontend Component Testing Page"""
+    return render_template('test_frontend.html')
 
 if __name__ == '__main__':
     # Ensure data directory exists
